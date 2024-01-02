@@ -10,6 +10,6 @@ Videos:
 Tutorials:
 - Later:[[
 
-Also needed:
+Also needed (Only if you setup python project, for .exe you dont need anything):
 - FFMPEG
 - pydub (Python library)
