@@ -1,5 +1,4 @@
 from pydub import AudioSegment
-from pydub.generators import Sine
 import shutil
 import os
 
@@ -32,7 +31,11 @@ def read_click_data(file_path):
 
 
 def create_click_audio(click_data, frame_rate=144, click_sound_path="click.wav", release_sound_path="release.wav",
-                       output_file="output.mp3"):
+                       output_file=None):
+
+    if output_file is None:
+        output_file = f"{file_name}.mp3"
+
     frame_duration = 1000 / frame_rate
     audio = AudioSegment.silent(duration=int(click_data[-1][0] * frame_duration) + 100)
 
@@ -49,11 +52,11 @@ def create_click_audio(click_data, frame_rate=144, click_sound_path="click.wav",
 
 def start():
 
-    print('Welcome to GDClicks 1.0')
+    print('Welcome to GDClick 1.01')
     print('Made by watakak')
     print('')
-    file_name = input('Input name of the txt file: ')
-    framerate = int(input("Input FPS of the GDBot record: "))
+    file_name = input('Input only name of the txt file: ')
+    framerate = int(input("Input FPS's of the GDBot record: "))
 
     return file_name, framerate
 
@@ -65,7 +68,7 @@ if __name__ == "__main__":
     frame_rate = framerate
     click_sound_path = "click_sound1.wav"  # Путь к вашему звуку нажатия мышки
     release_sound_path = "release_sound1.wav"  # Путь к вашему звуку отжатия мышки
-    output_file = "output.mp3"
+    output_file = f"{file_name}.mp3"
 
     preprocess_click_data(temp_file, temp_file)
 
