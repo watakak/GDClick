@@ -4,8 +4,8 @@ An python application that allows to create .mp3 clicks sounds using any GDBot
 Supported GDBot's:
 - [GDH](https://github.com/TobyAdd/GDH)
 
-Videos:
-- Sorry, later:[
+Video Showcases:
+- (BaB by UltraShtorm228)[https://www.youtube.com/watch?v=nJWZh01M6mE]
 
 Tutorials:
 - Later:[[
