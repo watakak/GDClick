@@ -11,5 +11,5 @@ Tutorials:
 - Later:[[
 
 Also needed:
-- FFMPEG (Already included in package)
+- FFMPEG
 - pydub (Python library)
