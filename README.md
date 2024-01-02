@@ -5,7 +5,7 @@ Supported GDBot's:
 - [GDH](https://github.com/TobyAdd/GDH)
 
 Video Showcases:
-- (BaB by UltraShtorm228)[https://www.youtube.com/watch?v=nJWZh01M6mE]
+- [BaB by UltraShtorm228](https://www.youtube.com/watch?v=nJWZh01M6mE)
 
 Tutorials:
 - Later:[[
